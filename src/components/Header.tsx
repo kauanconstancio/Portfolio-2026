@@ -39,7 +39,7 @@ export default function Header() {
             className="group relative cursor-pointer text-[14px] tracking-widest text-gray-400 transition-all"
           >
             {link.name}
-            <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-linear-to-r from-blue-900 via-blue-600 to-blue-400 transition-all duration-300 group-hover:w-full"></span>
           </a>
         ))}
       </div>
@@ -56,7 +56,7 @@ export default function Header() {
                 className="group relative cursor-pointer rounded-lg p-2 text-xl tracking-widest"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-linear-to-r from-blue-900 via-blue-600 to-blue-400 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </SheetHeader>
