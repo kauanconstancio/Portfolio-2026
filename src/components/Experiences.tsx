@@ -32,15 +32,15 @@ export default function Experiences() {
     <div className="flex w-full flex-col items-center justify-center gap-16 pt-32 pb-20">
       <div className="flex flex-col items-center gap-4">
         <h2 className="bg-linear-to-r from-blue-900 via-blue-600 to-blue-400 bg-clip-text text-center text-4xl font-bold tracking-widest text-transparent">
-          Experiências
+          Competências
         </h2>
         <p className="tracking-widest text-gray-400">
           Formação e Trajetória Profissional
         </p>
       </div>
 
-      <div className="relative mt-10 flex w-full flex-col">
-        <div className="absolute top-0 left-10 h-full w-px bg-linear-to-b from-blue-600/60 via-blue-500/30 to-transparent md:left-1/2 md:-translate-x-[0.5px]"></div>
+      <div className="relative mx-auto mt-10 flex w-full max-w-4xl flex-col px-4 sm:px-8">
+        <div className="absolute top-0 left-14 h-full w-px bg-linear-to-b from-blue-600/60 via-blue-500/30 to-transparent md:left-1/2 md:-translate-x-[0.5px]"></div>
 
         <div className="flex flex-col gap-16 md:gap-24">
           {experiences.map((exp, index) => {
