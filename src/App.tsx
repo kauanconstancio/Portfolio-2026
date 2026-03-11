@@ -1,3 +1,4 @@
+import Certificates from "./components/Certificates"
 import Experiences from "./components/Experiences"
 import FloatingParticles from "./components/FloatingParticles"
 import Header from "./components/Header"
@@ -15,6 +16,7 @@ export function App() {
         <Experiences />
         <TechGrid />
         <Projects />
+        <Certificates />
       </main>
     </div>
   )
