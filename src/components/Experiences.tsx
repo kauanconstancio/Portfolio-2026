@@ -29,12 +29,12 @@ export default function Experiences() {
   ]
 
   return (
-    <div className="flex w-full flex-col items-center justify-center gap-16 pt-32 pb-20">
+    <div className="flex w-full flex-col items-center justify-center gap-16 pt-32">
       <div className="flex flex-col items-center gap-4">
         <h2 className="bg-linear-to-r from-blue-900 via-blue-600 to-blue-400 bg-clip-text text-center text-4xl font-bold tracking-widest text-transparent">
           Competências
         </h2>
-        <p className="tracking-widest text-gray-400">
+        <p className="text-center tracking-widest text-gray-400">
           Formação e Trajetória Profissional
         </p>
       </div>
