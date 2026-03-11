@@ -87,7 +87,7 @@ export default function TechGrid() {
         <p className="text-center tracking-widest text-gray-400">
           Tecnologias que domino e utilizo em meus projetos
         </p>
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+        <div className="mt-20 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
           {tech.map((tech) => (
             <div
               key={tech.id}

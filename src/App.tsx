@@ -2,6 +2,7 @@ import Experiences from "./components/Experiences"
 import FloatingParticles from "./components/FloatingParticles"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
+import Projects from "./components/Projects"
 import TechGrid from "./components/TechGrid"
 
 export function App() {
@@ -13,6 +14,7 @@ export function App() {
         <Hero />
         <Experiences />
         <TechGrid />
+        <Projects />
       </main>
     </div>
   )
