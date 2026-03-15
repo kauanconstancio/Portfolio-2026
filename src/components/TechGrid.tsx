@@ -91,7 +91,7 @@ export default function TechGrid() {
           {tech.map((tech) => (
             <div
               key={tech.id}
-              className="flex h-[60px] items-center justify-center rounded-lg border border-blue-500 p-5 transition-all duration-300 hover:scale-105 hover:border-blue-400 hover:shadow-[0_0_20px_rgba(6,182,212,0.25)]"
+              className="flex h-[60px] items-center justify-center rounded-lg border border-blue-500 p-5 transition-all duration-300 hover:scale-105 hover:border-blue-700 hover:shadow-[0_0_20px_rgba(0,102,255,0.6)]"
             >
               <h3>{tech.name}</h3>
             </div>

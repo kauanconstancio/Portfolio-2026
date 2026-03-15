@@ -1,4 +1,5 @@
 import Certificates from "./components/Certificates"
+import ContactMe from "./components/ContactMe"
 import Experiences from "./components/Experiences"
 import FloatingParticles from "./components/FloatingParticles"
 import Header from "./components/Header"
@@ -17,6 +18,7 @@ export function App() {
         <TechGrid />
         <Projects />
         <Certificates />
+        <ContactMe />
       </main>
     </div>
   )
