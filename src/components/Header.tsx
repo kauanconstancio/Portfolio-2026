@@ -30,7 +30,9 @@ export default function Header() {
   ]
   return (
     <header className="flex w-full items-center justify-between">
-      <h1 className="text-2xl">KC</h1>
+      <h1 className="bg-linear-to-r from-blue-900 via-blue-600 to-blue-400 bg-clip-text text-center text-2xl font-bold tracking-widest text-transparent">
+        KC
+      </h1>
       <div className="hidden gap-5 md:flex">
         {links.map((link) => (
           <a
