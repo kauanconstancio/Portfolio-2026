@@ -6,6 +6,7 @@ import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Projects from "./components/Projects"
 import TechGrid from "./components/TechGrid"
+import { Separator } from "./components/ui/separator"
 
 export function App() {
   return (
@@ -19,6 +20,15 @@ export function App() {
         <Projects />
         <Certificates />
         <ContactMe />
+        <Separator className="mt-10" />
+        <p className="mt-10 text-center text-sm tracking-widest text-gray-400">
+          © 2026{" "}
+          <span className="bg-linear-to-r from-blue-900 via-blue-600 to-blue-400 bg-clip-text text-transparent">
+            {" "}
+            Kauan Constancio
+          </span>
+          . Todos os direitos reservados.
+        </p>
       </main>
     </div>
   )
