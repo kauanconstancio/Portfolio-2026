@@ -79,7 +79,10 @@ export default function TechGrid() {
   ]
 
   return (
-    <div className="flex w-full flex-col items-center justify-center gap-16 pt-32 pb-20">
+    <div
+      className="flex w-full flex-col items-center justify-center gap-16 pt-32 pb-20"
+      id="tech"
+    >
       <div className="flex flex-col items-center gap-4">
         <h2 className="bg-linear-to-r from-blue-900 via-blue-600 to-blue-400 bg-clip-text text-center text-4xl font-bold tracking-widest text-transparent">
           Tecnologias

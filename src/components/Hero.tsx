@@ -2,7 +2,7 @@ import { Button } from "./ui/button"
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center" id="hero">
       <div className="flex flex-col items-center justify-center gap-5 md:flex-row">
         <div className="flex flex-col items-center justify-center gap-5 md:items-start">
           <h2 className="tracking-widest">HELLO, I'M KAUAN</h2>

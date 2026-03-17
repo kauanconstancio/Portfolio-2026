@@ -74,7 +74,7 @@ export default function Projetcs() {
     },
   ]
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center" id="projects">
       <h2 className="bg-linear-to-r from-blue-900 via-blue-600 to-blue-400 bg-clip-text text-center text-4xl font-bold tracking-widest text-transparent">
         Projetos
       </h2>

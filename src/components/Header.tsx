@@ -5,27 +5,27 @@ export default function Header() {
   const links = [
     {
       name: "Início",
-      href: "#",
+      href: "#hero",
     },
     {
       name: "Competências",
-      href: "#",
+      href: "#experiences",
     },
     {
       name: "Tecnologias",
-      href: "#",
+      href: "#tech",
     },
     {
       name: "Projetos",
-      href: "#",
+      href: "#projects",
     },
     {
       name: "Certificados",
-      href: "#",
+      href: "#certificates",
     },
     {
       name: "Contato",
-      href: "#",
+      href: "#contact",
     },
   ]
   return (
