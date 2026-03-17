@@ -10,7 +10,7 @@ import { Separator } from "./components/ui/separator"
 
 export function App() {
   return (
-    <div className="mx-auto flex min-h-screen w-full flex-col gap-10 p-6 lg:w-[1300px]">
+    <div className="mx-auto flex min-h-screen w-full flex-col gap-10 p-6 lg:w-[1200px]">
       <FloatingParticles />
       <Header />
       <main className="z-10 flex flex-col gap-10 p-7">
