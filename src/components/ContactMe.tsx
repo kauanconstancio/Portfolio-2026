@@ -40,7 +40,7 @@ export default function ContactMe() {
       <p className="mt-5 text-center tracking-widest text-gray-400">
         Me conte como posso te ajudar!
       </p>
-      <div className="mt-20 flex w-full flex-col gap-10">
+      <div className="mt-20 flex w-full flex-col gap-10 md:w-[700px]">
         {socials.map((Social) => {
           const Icon = Social.icon
           return (

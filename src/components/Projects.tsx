@@ -5,16 +5,6 @@ import { Card, CardContent } from "./ui/card"
 export default function Projetcs() {
   const projects = [
     {
-      id: "7",
-      img: "./src/assets/img/projectsImg/EM BREVE.png",
-      alt: "EM BREVE",
-      projectName: "Projeto em Andamento",
-      projectDescription: "",
-      tags: [],
-      github: "",
-      deploylink: "",
-    },
-    {
       id: "1",
       img: "./src/assets/img/projectsImg/solvoo.png",
       alt: "Solvoo - Ecommerce de Serviços",
@@ -91,43 +81,47 @@ export default function Projetcs() {
       <p className="mt-5 text-center tracking-widest text-gray-400">
         Confira meus projetos
       </p>
-      {projects.map((Project) => (
-        <Card className="group mt-5 transition-all duration-300">
-          <CardContent>
-            <div className="relative overflow-hidden rounded-lg">
-              <img
-                src={Project.img}
-                alt={Project.alt}
-                className="transition-all duration-400 group-hover:blur-xs"
-              />
-              <div className="absolute inset-0 flex w-full translate-y-8 items-center justify-center gap-4 opacity-0 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100">
-                <a
-                  href={Project.github}
-                  className="rounded-full bg-gray-400/70 p-3 transition-all duration-400 hover:scale-110 hover:bg-gray-500/70"
-                >
-                  <Github />
-                </a>
-                <a
-                  href={Project.deploylink}
-                  className="rounded-full bg-gray-400/70 p-3 transition-all duration-400 hover:scale-110 hover:bg-gray-500/70"
-                >
-                  <Link />
-                </a>
+      <div className="mt-20 grid grid-cols-1 gap-5 md:grid-cols-3">
+        {projects.map((Project) => (
+          <Card className="group mt-5 transition-all duration-300">
+            <CardContent>
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src={Project.img}
+                  alt={Project.alt}
+                  className="transition-all duration-400 group-hover:blur-xs"
+                />
+                <div className="absolute inset-0 flex w-full translate-y-8 items-center justify-center gap-4 opacity-0 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100">
+                  <a
+                    href={Project.github}
+                    className="rounded-full bg-gray-400/70 p-3 transition-all duration-400 hover:scale-110 hover:bg-gray-500/70"
+                  >
+                    <Github />
+                  </a>
+                  <a
+                    href={Project.deploylink}
+                    className="rounded-full bg-gray-400/70 p-3 transition-all duration-400 hover:scale-110 hover:bg-gray-500/70"
+                  >
+                    <Link />
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="mt-3 flex flex-col gap-3">
-              <h2 className="text-lg tracking-widest">{Project.projectName}</h2>
-              <div className="flex flex-wrap items-center gap-3">
-                {Project.tags.map((tag) => (
-                  <Badge className="bg-gray-500/50 px-3 py-2 text-white/70">
-                    {tag}
-                  </Badge>
-                ))}
+              <div className="mt-3 flex flex-col gap-3">
+                <h2 className="text-lg tracking-widest">
+                  {Project.projectName}
+                </h2>
+                <div className="flex flex-wrap items-center gap-3">
+                  {Project.tags.map((tag) => (
+                    <Badge className="bg-gray-500/50 px-3 py-2 text-white/70">
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
               </div>
-            </div>
-          </CardContent>
-        </Card>
-      ))}
+            </CardContent>
+          </Card>
+        ))}
+      </div>
     </div>
   )
 }
