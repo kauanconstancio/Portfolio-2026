@@ -94,13 +94,13 @@ export default function Projetcs() {
       {projects.map((Project) => (
         <Card className="group mt-5 transition-all duration-300">
           <CardContent>
-            <div className="relative">
+            <div className="relative overflow-hidden rounded-lg">
               <img
                 src={Project.img}
                 alt={Project.alt}
-                className="rounded-lg transition-all duration-400 group-hover:blur-xs"
+                className="transition-all duration-400 group-hover:blur-xs"
               />
-              <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 transition-opacity duration-400 group-hover:opacity-100">
+              <div className="absolute inset-0 flex w-full translate-y-8 items-center justify-center gap-4 opacity-0 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100">
                 <a
                   href={Project.github}
                   className="rounded-full bg-gray-400/70 p-3 transition-all duration-400 hover:scale-110 hover:bg-gray-500/70"

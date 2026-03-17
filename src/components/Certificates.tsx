@@ -120,12 +120,12 @@ export default function Certificates() {
         <Carousel className="mt-10 w-[80%] max-w-[900px]">
           <CarouselContent className="">
             {certificates.map((certificate) => (
-              <CarouselItem className="group relative max-w-[320px] md:basis-1/2 lg:basis-1/3">
+              <CarouselItem className="group relative max-w-[320px] overflow-hidden rounded-lg md:basis-1/2 lg:basis-1/3">
                 <img
                   src={certificate.path}
                   className="rounded-lg transition-all duration-300 group-hover:blur-xs"
                 />
-                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 transition-opacity duration-400 group-hover:opacity-100">
+                <div className="absolute inset-0 flex translate-y-8 items-center justify-center gap-4 opacity-0 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100">
                   <a
                     href={certificate.link}
                     className="rounded-full bg-gray-400/70 p-3 transition-all duration-400 hover:scale-110 hover:bg-gray-500/70"
